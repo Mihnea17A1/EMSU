@@ -1,0 +1,1245 @@
+*{
+   
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ section{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 0.5rem;
+ }
+ 
+ .header{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: black;
+    border-bottom: var(--border);
+ }
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    position:relative;
+ }
+ 
+ .header .flex .logo{
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 1rem;
+    margin-right: auto;
+ }
+ 
+ .header .flex .logo:hover{
+    color: #f96d6dca;
+ }
+ 
+ .header .flex ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    margin: 0 1rem;
+ }
+ 
+ .header .flex ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+ 
+ .header .flex ul li ul{
+    margin: 0 0.2rem;
+ }
+ 
+ .header .flex ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+ }
+ 
+ 
+ .header .flex ul li a:hover{
+    color: #f96d6dca;
+ }
+ 
+ .header .flex ul li ul li{
+    display: none;
+    font-size:1.2rem;
+ }
+ 
+ .header .flex ul li:hover ul li{
+    display: block;
+ }
+ 
+ .container{
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding:20px;
+     padding-bottom: 60px;
+     background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .container .content{
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 5px 10px rgba(0,0,0,.1);
+     background: linear-gradient(135deg, #dc0606ca, #05073a);
+     text-align: center;
+     width: 600px;
+ }
+ 
+ .container .content h3 span{
+    background: linear-gradient(135deg,#05073a63, #dc0606);
+    color:#fff;
+    border-radius: 25px;
+    padding:0 15px;
+    border: 1px solid white;
+ }
+ 
+ .container .content h3{
+    font-size: 30px;
+    color: white;
+ }
+ 
+ .container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:rgb(143, 187, 172);
+ }
+ 
+ .container .content .btn{
+     width: 100%;
+     background: transparent;
+     border: 1px solid white;
+     margin: 35px 0 10px;
+     height: 32px;
+     border-radius: 20px;
+     padding: 0 10px;
+     box-sizing: border-box;
+     color: white;
+     cursor: pointer;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .container .content .btn:hover{
+     background: rgb(132, 26, 47);
+     color:#fff;
+ }
+ 
+ .form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .form-container form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+    width: 350px;
+ }
+ 
+ .form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .form-container form input{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ ::placeholder{
+     color: rgb(203, 200, 200);
+     font-size: 15px;
+ }
+ 
+ .form-container form .form-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .form-container form p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+ }
+ 
+ .form-container form p a{
+     width: 100%;
+     background: transparent;
+     border: 1px solid white;
+     margin: 35px 0 10px;
+     height: 32px;
+     font-size: 15px;
+     border-radius: 20px;
+     padding: 0 10px;
+     box-sizing: border-box;
+     color: white;
+     cursor: pointer;
+     font-size: 15px;
+ }
+ 
+ .form-container form p a:hover{
+     background: rgb(132, 26, 47);
+     color:#fff;
+  }
+ 
+ .form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+ 
+ .update-profile{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .update-profile form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+    width: 500px;
+ }
+ 
+ .update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .update-profile form h3{
+    font-size: 30px;
+    justify-content:center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .update-profile form .flex .inputBox{
+    width: 49%;
+ }
+ 
+ .update-profile form .flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:white;
+ }
+ 
+ .update-profile form .flex .inputBox .box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .update-profile form .message_ok{
+    margin:10px 0;
+    display: block;
+    background:  rgb(68, 147, 25);
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+ 
+ .update-profile form .message_not_ok{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+ 
+ .update-profile form .btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .update-profile form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .update-profile form .back-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .update-profile form .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .movie-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .movie-container ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+ }
+ 
+ .movie-container ul li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+ }
+ 
+ .movie-container ul li a p{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+ }
+ 
+ .movie-container ul li a p:hover{
+    color: #f96d6dca;
+ }
+ 
+ .movie-container h3{
+    font-size: 30px;
+    justify-content:center;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+ }
+ 
+ .movie-container form .inputBox{
+    width: 200px;
+    background: transparent;
+    border: 2px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+ }
+ 
+ .movie-container form .btn{
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .movie-container form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .movie-container .back-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .movie-container .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .movie-container .movie-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+ }
+ 
+ .movie-container .movie-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+ }
+ 
+ .movie-container .movie-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .review-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .review-container p{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+ }
+ 
+ .review-container .review-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 20px; 
+ }
+ 
+ .review-container .review-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+    white-space: nowrap;
+ }
+ 
+ .review-container .review-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .review-container ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+ }
+ 
+ .review-container ul li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+ }
+ 
+ .review-container ul li a p{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+ }
+ 
+ .review-container ul li a p:hover{
+    color: #f96d6dca;
+ }
+ 
+ .insert-review{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .insert-review form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+ }
+ 
+ .insert-review form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .insert-review form h3{
+    font-size: 30px;
+    justify-content:center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .insert-review form .flex .inputBox{
+    width: 100%;
+ }
+ 
+ .insert-review form .flex .inputBox span{
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:white;
+    font-weight: bold;
+ }
+ 
+ .insert-review form .flex .inputBox .box-grade{
+    width: 100px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .insert-review form .flex .inputBox .box-comment{
+    width: 300px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 100px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .insert-review form .btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .insert-review form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .insert-review form .back-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .insert-review form .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .update-review{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .update-review form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+ }
+ 
+ .update-review form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .update-review form h3{
+    font-size: 30px;
+    justify-content:center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .update-review form .flex .inputBox{
+    width: 100%;
+ }
+ 
+ .update-review form .flex .inputBox span{
+    text-align: center;
+    justify-content:center;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:white;
+    font-weight: bold;
+ }
+ 
+ .update-review form .flex .inputBox .box-grade{
+    width: 100px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .update-review form .flex .inputBox .box-comment{
+    width: 300px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 100px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .update-review form .message_ok{
+    margin:10px 0;
+    display: block;
+    background:  rgb(68, 147, 25);
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+ 
+ .update-review form .btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .update-review form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .update-review form .back-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .update-review form .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .delete-review{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .delete-review form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+ }
+ 
+ .delete-review form h3{
+    font-size: 17px;
+    justify-content:center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .delete-review form .btn{
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 28px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ 
+ .delete-review form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .delete-review form .back-btn{
+    background: red;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .delete-review form .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .cast-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .cast-container p{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+ }
+ 
+ .cast-container .cast-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 20px; 
+ }
+ 
+ .cast-container .cast-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+    white-space: nowrap;
+ }
+ 
+ .cast-container .cast-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .cast-container .actor-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 20px; 
+ }
+ 
+ .cast-container .actor-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+    white-space: nowrap;
+ }
+ 
+ .cast-container .actor-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .cast-container ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+ }
+ 
+ .cast-container ul li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+ }
+ 
+ .cast-container ul li a p{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+ 
+ .cast-container ul li a p:hover{
+    color: #f96d6dca;
+ }
+ 
+ .cast-container .cast-list tr th ul li{
+    float: left;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    background-color: green;
+ }
+ 
+ .cast-container .actor-list tr th ul li{
+    float: left;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    background-color: green;
+ }
+ 
+ .award-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .award-container p{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+ }
+ 
+ .award-container .award-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 20px; 
+ }
+ 
+ .award-container .award-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+    white-space: nowrap;
+ }
+ 
+ .award-container .award-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .award-container ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+ }
+ 
+ .award-container ul li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+ }
+ 
+ .award-container ul li a p{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+ }
+ 
+ .award-container ul li a p:hover{
+    color: #f96d6dca;
+ }
+ 
+ .insert-movie{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+ }
+ 
+ .insert-movie form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, #dc0606ca, #05073a);
+    text-align: center;
+ }
+ 
+ .insert-movie form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .insert-movie form h3{
+    font-size: 30px;
+    justify-content:center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+ }
+ 
+ .insert-movie form .flex .inputBox{
+    width: 100%;
+ }
+ 
+ .insert-movie form .flex .inputBox span{
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:white;
+    font-weight: bold;
+ }
+ 
+ .insert-movie form .btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .insert-movie form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .insert-movie form .back-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .insert-movie form .back-btn:hover{
+    background: rgb(132, 26, 47);
+    color:#fff;
+ }
+ 
+ .insert-movie form .flex .inputBox .box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+ }
+ 
+ .movie-container form .btn{
+    background: transparent;
+    border: 1px solid white;
+    margin: 5px 0 10px;
+    height: 23px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ 
+ .movie-container form .btn:hover{
+    background: rgb(68, 147, 25);
+    color:#fff;
+ }
+ 
+ .delete-review form select{
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+ }
+ 
+ .movie-container form select{
+    background-color: white;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 23px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+ }
+ 
+ .movie-container form .box{
+   
+    background-color: white;
+    border: 1px solid white;
+    margin: 6px 0;
+    height: 23px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+ }
+ 
+ .movie-container .int-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 70%;
+ }
+ 
+ .movie-container .int-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+ }
+ 
+ .movie-container .int-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+ }
+ 
+ .container .content form .int-list{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+ }
+ 
+ .container .content form .int-list tr th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-style: italic ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #4f0606ca, #05073a);
+ }
+ 
+ .container .content form .int-list tr td{
+    border: 1.5px solid white;
+    border-collapse: collapse;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+ }
