@@ -1,6 +1,6 @@
 # Stocarea Dotarilor din Universitate – Full Stack App
 
-## Tema principala a poriectului meu este posibilitatea universitatii de a stoca si de a tine o mai buna evidenta a dotarilor din fiecare facultate, implicit din fiecare sala a facultatii.
+## Tema principala a proiectului meu este posibilitatea universitatii de a stoca si de a tine o mai buna evidenta a dotarilor din fiecare facultate, implicit din fiecare sala a facultatii.
 
     LOGIN / REGISTER 
 Inceputul implementarii s-a concretizat prin crearea unei pagini de login si de register ce stoca in baza de date informatiile relevante. In dezvoltarea aplicatiei mele, utilizatorii ce isi pot crea conturi pe platforma sunt chiar angajatii facultatilor pe care eu le-am introdus deja in baza de date. Aceasta lista de facultati se poate modifica prin adugare/stergere doar in cazul in care o persoana se conecteaza cu contul de admin, altfel, niciun utilizator nu ar trebui sa aiba posibilitatea sa modifice o parte atat de importanta din aplicatie. Astfel, un nou utilizator isi poate crea un cont nou apasand pe butonul de “Inregistreaza-te” ce il va redirectiona in pagina de mai jos:
